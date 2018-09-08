@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Looping a triangle</title>
+
+    <style>
+      #exercise {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Looping a triangle</h1>
+    <p>Exercise from: Eloquent JavaScript</p>
+    <p>Write a loop that makes seven calls to console.log to output the following
+      triangle (personal extra: make it visible on the page):</p>
+    <p>#<br>##<br>###<br>####<br>#####<br>######<br>#######</p>
+
+    <p>Exercise below</p>
+    <p id="exercise"></p>
+
+    <p>My code:</p>
+    <pre><code>
+      var target = document.getElementById('exercise');
+      var line = '';
+
+      for (var i = 0; i < 7; i++) {
+        line += '#';
+        console.log(line);
+        target.innerHTML += line + '&lt;br&gt;';
+      };
+    </code></pre>
+
+
+    <script>
+      var target = document.getElementById('exercise');
+      var line = '';
+
+      for (var i = 0; i < 7; i++) {
+        line += '#';
+        console.log(line);
+        target.innerHTML += line + '<br>';
+      };
+    </script>
+
+  </body>
+</html>
